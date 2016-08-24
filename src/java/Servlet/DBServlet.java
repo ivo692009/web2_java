@@ -50,6 +50,8 @@ public class DBServlet extends HttpServlet {
             }
 
         } 
+        
+        
             catch (NamingException v) {
                     
             }
