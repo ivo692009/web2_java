@@ -38,7 +38,7 @@ public class BienvenidaServlet extends HttpServlet {
         //poner a dispocicion la variable al jsp
         request.setAttribute("nombre", miNombre);
         
-        //redirijir al jsp.
+        //redirijir al jsp.asdasd
         request.getRequestDispatcher("WEB-INF/jsp/hola.jsp").forward(request, response);
         
         
