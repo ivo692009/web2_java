@@ -31,7 +31,9 @@
                         <option id="localidad" value="Trelew"> Trelew</option> 
                         <option id="localidad" value="Gaiman"> Gaiman</option> 
                 </select>
-                <input type="submit" name="enviar">Enviar</input>
+                
+                <h1>DNI: <input type="number" name="dni" id="dni"/></h1><br>
+                <input type="submit" name="enviar"/>Enviar
             </fieldset>
         </form>
     </body>

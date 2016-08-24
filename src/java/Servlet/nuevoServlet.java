@@ -17,14 +17,12 @@ public class nuevoServlet extends HttpServlet {
         String nombre = null;
         Integer edad = null;
         String [] localidades= null;
-        //localidades[0] = "rawson";
-        //localidades[1] = "trelew";
-        //localidades[2] = "gaiman";
+        Integer dni= null;
         
         request.setAttribute("nombre", nombre);
         request.setAttribute("edad", edad);
         request.setAttribute("localidades", localidades);
-        
+        request.setAttribute("dni", dni);
         
         request.getRequestDispatcher("WEB-INF/jsp/form.jsp").forward(request, response);
             

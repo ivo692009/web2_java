@@ -21,7 +21,7 @@ public class Model2Servlet extends HttpServlet {
         String nombre = request.getParameter("nombre");
         Integer edad = Integer.valueOf(request.getParameter("edad"));
         String localidad = request.getParameter("localidad");
-        
+        Integer dni = Integer.valueOf(request.getParameter("dni"));
         
         HashMap<String,Object> errores = new HashMap();
        
@@ -34,6 +34,10 @@ public class Model2Servlet extends HttpServlet {
             errores.put("edad", "La edad ingresada es incorrecta");
         }
         
+        if(dni < 0 || dni > 99999999){
+            errores.put("dni","DNI ingresado invalido");
+        }
+        
        // if(!"Rawson".equals(localidad) || !"Trelew".equals(localidad) || !"Gaiman".equals(localidad)){
        //     errores.put("localidad","Localidad ingresada incorrecta");
        // }
@@ -42,6 +46,7 @@ public class Model2Servlet extends HttpServlet {
         request.setAttribute("nombre", nombre);
         request.setAttribute("edad", edad);
         request.setAttribute("localidad", localidad);
+        request.setAttribute("dni", dni);
         
         if(errores.isEmpty()){
             //Forward a la pagina OK

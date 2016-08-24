@@ -9,6 +9,7 @@
         <h1>Datos ok</h1>
         <li> ${nombre}</li> 
         <li> ${edad}</li> 
+        <li>${dni}</li>
         <li> ${localidad}</li> 
     </body>
 </html>
