@@ -48,6 +48,23 @@ public class DBServlet extends HttpServlet {
                 String linea = String.format("<p>Nombre : %s, Edad: %d </p>",rs.getString("nombre") ,rs.getInt("edad"));
                 out.println(linea);
             }
+            /*List <HashMap<String, Object>> resultado = new LinkedList();
+            
+            while(rs.next()){
+                HashMap row = new HashMap();
+                row.put("nombre", rs.getString("nombre"));
+                row.put("edad", rs.getInt("edad"));
+                resultado.add(row);
+            }
+            
+            
+            out.println("<h1>Clientes mayores de" + edad + "años </h1>");
+            for(HashMap<String, Object> item : resultado){
+                String linea=String.format(
+                "<p>Nombre: %s. Edad: %d </p>",item.get("nombre"),item.get("edad"));
+                out.println(linea);
+            }
+            */
 
         } 
         
